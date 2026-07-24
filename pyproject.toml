@@ -1,0 +1,15 @@
+[project]
+name = "umbra-nodes"
+description = "Umbra Studio custom nodes for ComfyUI metadata saving, Power Prompter integration, and workflow bridge support."
+version = "0.1.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Nocturne-Ai-Labs/Umbra-Nodes"
+
+[tool.comfy]
+PublisherId = "minokai69"
+DisplayName = "Umbra Nodes"
+Icon = ""
