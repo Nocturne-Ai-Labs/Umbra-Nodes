@@ -50,33 +50,13 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/Nocturne-Ai-Labs/Umbra-Nodes.git Umbra-Nodes
 ```
 
-Then install Python requirements if ComfyUI-Manager does not do it for you:
-
-```bash
-cd Umbra-Nodes
-pip install -r requirements.txt
-```
-
 Restart ComfyUI after installing or updating.
-
-## Example Workflow
-
-The `example_workflows/` folder includes
-`power-prompter-basic-api-workflow.json`, a minimal image API workflow using
-`UmbraPowerPrompter`, ComfyUI's `KSampler`, and `UmbraLabSaveImage`.
-
-It also includes `umbra-ui-anima-api-workflow.json`, the Umbra UI image
-pipeline for Anima/SDXL-style prompting. It keeps Power Prompter as the batch
-source while routing each prompt through Umbra's detail and 4K upscale nodes.
-
-The same file is also mirrored in `examples/` for normal repository browsing.
 
 ## ComfyUI-Manager / Registry
 
 This repository includes:
 
 - `pyproject.toml` for Comfy Registry metadata
-- `requirements.txt` for ComfyUI-Manager dependency install
 - `.comfyignore` for registry package cleanup
 
 Before publishing to Comfy Registry, make sure the `PublisherId` in
@@ -84,10 +64,10 @@ Before publishing to Comfy Registry, make sure the `PublisherId` in
 
 ## Relationship To Umbra Studio
 
-Umbra Studio can bundle or sync this node package into its managed ComfyUI
-runtime. This repository is the standalone source package so users can also
-install/update Umbra Nodes independently through ComfyUI-Manager or a normal Git
-clone.
+Umbra Studio installs and updates this package from the public repository into
+its managed ComfyUI runtime. Umbra Nodes is not bundled into Umbra Studio
+portable packages, which keeps one canonical source for both Umbra and
+ComfyUI-Manager installations.
 
 ## License
 
