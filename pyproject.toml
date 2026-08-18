@@ -10,6 +10,6 @@ dependencies = []
 Repository = "https://github.com/Nocturne-Ai-Labs/Umbra-Nodes"
 
 [tool.comfy]
-PublisherId = "minokai69"
+PublisherId = "nocturne-labs"
 DisplayName = "Umbra Nodes"
 Icon = ""
